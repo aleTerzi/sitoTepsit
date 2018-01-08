@@ -1,0 +1,43 @@
+body {
+  font-family: arial;
+}
+
+header {
+  z-index: 1000;
+  margin-top: 65px;
+  margin-left: 20px;
+}
+
+nav ul {
+  position: fixed;
+  z-index: -1;
+  list-style: none;
+  background-color: orange;
+  top: 40px;
+  right: 5px;
+  left: 5px;
+}
+
+nav ul li {
+  float: right;
+  display: block;
+}
+
+nav ul li a {
+  display: block;
+  background-color: orange;
+  text-decoration: none;
+  text-align: center;
+  margin-left:40px;
+  width:200px;
+  height: 60px;
+  line-height: 60px;
+  border:1px solid black;
+}
+
+footer {
+  position:absolute;
+  clear: left;
+  bottom:8px;
+  left:20px;
+}
