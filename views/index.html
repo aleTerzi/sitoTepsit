@@ -6,10 +6,24 @@
     <title>Programming Websites</title>
   </head>
   <body>
-    <header>
-      <h1>Web Developing</h1>
-    </header>
+
+
     <nav>
+      <div id="titolo">
+        <h1>Web Developing</h1>
+        <p id="intestazione">i</p>
+
+          <script type="text/javascript">
+            var intervalID = window.setInterval(myCallback, 2000);
+
+            function myCallback() {
+              setTimeout(function(){document.getElementById("intestazione").innerHTML = "yao";}, 1000);
+              setTimeout(function(){document.getElementById("intestazione").innerHTML = "bella";}, 3000);
+            }
+
+          </script>
+      </div>
+
       <ul>
         <li>
           <a href='#'>Node js</a>
@@ -26,10 +40,14 @@
         <li>
           <a href='#'>Templating Engine</a>
         </li>
+        <li>
+          <a href='#'>Databases</a>
+        </li>
       </ul>
     </nav>
     <footer>
       <p>© 2018 Aramu&Terzi</p>
     </footer>
+
   </body>
 </html>

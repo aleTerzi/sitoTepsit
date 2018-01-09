@@ -1,38 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Titillium+Web');
 body {
-  font-family: arial;
+  font-family: 'Exo 2', sans-serif;
+  margin: 0;
 }
 
-header {
-  z-index: 1000;
-  margin-top: 65px;
-  margin-left: 20px;
+#titolo {
+  position: absolute;
+  float:left;
+  margin-left: 15px;
+  margin-bottom: 50px;
+  height: 30px;
+  width: 600px;
+}
+h1 {
+  float: left;
+  margin-top:10px;
+  font-size: 35px;
+}
+#intestazione{
+  color: #494b4f;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-left: 270px;
+  margin-top:26px;
+}
+nav {
+  //overflow: hidden;
+  background-color: #242729;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 nav ul {
-  position: fixed;
-  z-index: -1;
-  list-style: none;
-  background-color: orange;
-  top: 40px;
-  right: 5px;
-  left: 5px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 150px;
 }
 
-nav ul li {
+nav ul li a { /*link's style*/
   float: right;
   display: block;
+  background-color: #242729;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  margin-right:10px;
+  width: 150px;
+  //height: 60px;
+  line-height: 60px;
+  //border:1px solid black;
 }
 
 nav ul li a {
-  display: block;
-  background-color: orange;
-  text-decoration: none;
-  text-align: center;
-  margin-left:40px;
-  width:200px;
-  height: 60px;
-  line-height: 60px;
-  border:1px solid black;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+}
+
+nav ul li a:hover {
+  background-color: red;
 }
 
 footer {
