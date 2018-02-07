@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2|Titillium+Web');
 body {
-  font-family: 'Exo 2', sans-serif;
+  //font-family: 'Exo 2', sans-serif;
+  font-family: calibri;
   margin: 0;
 }
 
@@ -10,20 +11,31 @@ body {
   margin-left: 15px;
   margin-bottom: 50px;
   height: 30px;
-  width: 600px;
+  width: 300px;
 }
+
 h1 {
   float: left;
   margin-top:10px;
   font-size: 35px;
 }
+#titolo {
+  color: #000;
+  text-decoration: none;
+}
+#link {
+  color:red;
+}
+
 #intestazione{
   color: #494b4f;
   font-weight: lighter;
   font-size: 20px;
-  margin-left: 270px;
-  margin-top:26px;
+  margin-left: 150px;
+  margin-top:22px;
+  text-decoration: none;
 }
+
 nav {
   //overflow: hidden;
   background-color: #242729;
@@ -36,7 +48,7 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-right: 150px;
+  margin-right: 10px;
 }
 
 nav ul li a { /*link's style*/
@@ -48,10 +60,10 @@ nav ul li a { /*link's style*/
   text-decoration: none;
   text-align: center;
   margin-right:10px;
-  width: 150px;
-  //height: 60px;
+  width: 135px;
   line-height: 60px;
-  //border:1px solid black;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 nav ul li a {
@@ -60,12 +72,21 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: red;
+  background-color: #db0404;
 }
 
 footer {
-  position:absolute;
+  position:fixed;
   clear: left;
   bottom:8px;
   left:20px;
+}
+
+main {
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.myslides {
+  width: 100%;
 }
