@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel='stylesheet' href="../stylesheets/style.css">
     <link rel='stylesheet' href="../stylesheets/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Programming Websites</title>
   </head>
   <body>
@@ -12,17 +13,24 @@
     <nav>
       <div id="titolo">
         <h1><a href="index.html" id="titolo"><span >Bew</span><span id="link">Link</span><a></h1>
-        <p id="intestazione">è...</p>
+        <p id="intestazione"></p>
 
           <script type="text/javascript">
-            var intervalID = window.setInterval(myCallback, 2000);
-
-            function myCallback() {
-              setTimeout(function(){document.getElementById("intestazione").innerHTML = "è creazione";}, 1000);
-              setTimeout(function(){document.getElementById("intestazione").innerHTML = "è relazioni";}, 3000);
-              setTimeout(function(){document.getElementById("intestazione").innerHTML = "è legami";}, 3000);
-            }
-
+            setTimeout(function(){$("#intestazione").fadeOut();}, 0000);
+              setTimeout(function(){$("#intestazione").fadeIn();}, 500);
+              setTimeout(function(){document.getElementById("intestazione").innerHTML = "è...";}, 500);
+              setTimeout(function(){$("#intestazione").fadeOut();}, 5000);
+              setTimeout(function(){$("#intestazione").fadeIn();}, 6000);
+              setTimeout(function(){document.getElementById("intestazione").innerHTML = "creazione";}, 6000);
+              setTimeout(function(){$("#intestazione").fadeOut();}, 8000);
+              setTimeout(function(){$("#intestazione").fadeIn();}, 9000);
+              setTimeout(function(){document.getElementById("intestazione").innerHTML = "relazioni";}, 9000);
+              setTimeout(function(){$("#intestazione").fadeOut();}, 11000);
+              setTimeout(function(){$("#intestazione").fadeIn();}, 12000);
+              setTimeout(function(){document.getElementById("intestazione").innerHTML = "legami";}, 12000);
+              setTimeout(function(){$("#intestazione").fadeOut();}, 14000);
+              setTimeout(function(){$("#intestazione").fadeIn();}, 15000);
+              setTimeout(function(){document.getElementById("intestazione").innerHTML = "è il web";}, 15000);
           </script>
       </div>
 
@@ -48,7 +56,7 @@
       </ul>
     </nav>
     <main>
-      <img src="../images/bewlinkFin.png">
+      <img src="../images/bewlinkFin.png" id="logo">
     </main>
     <footer>
       <p>© 2018 Aramu&Terzi</p>
