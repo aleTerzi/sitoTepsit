@@ -20,7 +20,7 @@ h1 {
   font-size: 35px;
 }
 #titolo {
-  color: #000;
+  color: #fff;
   text-decoration: none;
 }
 #link {
@@ -42,6 +42,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 nav ul {
@@ -80,11 +81,6 @@ footer {
   clear: left;
   bottom:8px;
   left:20px;
-}
-
-main {
-  margin-top: 100px;
-  overflow: hidden;
 }
 
 .myslides {
