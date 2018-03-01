@@ -1,154 +1,175 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel='stylesheet' href="../stylesheets/style.css">
-    <link rel='stylesheet' href="../stylesheets/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Programming Websites</title>
-  </head>
-  <body>
+<head>
+<meta charset="utf-8">
+<link rel='stylesheet' href="../stylesheets/style.css">
+<link rel='stylesheet' href="../stylesheets/index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>Programming Websites</title>
+</head>
+<body>
 
 
-    <nav>
-      <div id="titolo">
-        <h1><a href="index.html" id="titolo"><span >Bew</span><span id="link">Link</span><a></h1>
-        <p id="intestazione"></p>
+<nav id="menu" class="menu">
+  <div id="titolo">
+    <h1><a href="index.html" id="titolo"><span >Bew</span><span id="link">Link</span></a></h1>
+    <p id="intestazione"></p>
 
-          <script type="text/javascript">
-            setTimeout(function(){$("#intestazione").fadeOut();}, 0000);
-              setTimeout(function(){$("#intestazione").fadeIn();}, 500);
-              setTimeout(function(){document.getElementById("intestazione").innerHTML = "e'...";}, 500);
-              setTimeout(function(){$("#intestazione").fadeOut();}, 5000);
-              setTimeout(function(){$("#intestazione").fadeIn();}, 6000);
-              setTimeout(function(){document.getElementById("intestazione").innerHTML = "creazione";}, 6000);
-              setTimeout(function(){$("#intestazione").fadeOut();}, 8000);
-              setTimeout(function(){$("#intestazione").fadeIn();}, 9000);
-              setTimeout(function(){document.getElementById("intestazione").innerHTML = "relazioni";}, 9000);
-              setTimeout(function(){$("#intestazione").fadeOut();}, 11000);
-              setTimeout(function(){$("#intestazione").fadeIn();}, 12000);
-              setTimeout(function(){document.getElementById("intestazione").innerHTML = "legami";}, 12000);
-              setTimeout(function(){$("#intestazione").fadeOut();}, 14000);
-              setTimeout(function(){$("#intestazione").fadeIn();}, 15000);
-              setTimeout(function(){document.getElementById("intestazione").innerHTML = "e' il web";}, 15000);
-          </script>
-      </div>
-
-      <ul>
-        <li>
-          <a href='#'>Node js</a>
-        </li>
-        <li>
-          <a href='#'>HTML5 & CSS3</a>
-        </li>
-        <li>
-          <a href='#'>Javascript Client</a>
-        </li>
-        <li>
-          <a href='#'>PHP</a>
-        </li>
-        <li>
-          <a href='#'>Templating Engine</a>
-        </li>
-        <li>
-          <a href='databases.html'>Databases</a>
-        </li>
-      </ul>
-    </nav>
-    <div id="mainin">
-
-	     <h3>Impara a programmare attraverso le <span style="color: red;">relazioni</span>..</h3>
-       <hr>
-       <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-          <img src="../images/tagline1.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="../images/tagline2.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
-        </div>
-
-        <div class="mySlides fade">
-          <img src="../images/tagline3.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
-        </div>
-
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
-      <script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      // Next/previous controls
-      function plusSlides(n) {
-      showSlides(slideIndex += n);
-      }
-
-      // Thumbnail image controls
-      function currentSlide(n) {
-      showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      slides[slideIndex-1].style.opacity = 1;
-      dots[slideIndex-1].className += " active";
-      }
+      <script type="text/javascript">
+        setTimeout(function(){$("#intestazione").fadeOut();}, 0000);
+          setTimeout(function(){$("#intestazione").fadeIn();}, 500);
+          setTimeout(function(){document.getElementById("intestazione").innerHTML = "e'...";}, 500);
+          setTimeout(function(){$("#intestazione").fadeOut();}, 5000);
+          setTimeout(function(){$("#intestazione").fadeIn();}, 6000);
+          setTimeout(function(){document.getElementById("intestazione").innerHTML = "creazione";}, 6000);
+          setTimeout(function(){$("#intestazione").fadeOut();}, 8000);
+          setTimeout(function(){$("#intestazione").fadeIn();}, 9000);
+          setTimeout(function(){document.getElementById("intestazione").innerHTML = "relazioni";}, 9000);
+          setTimeout(function(){$("#intestazione").fadeOut();}, 11000);
+          setTimeout(function(){$("#intestazione").fadeIn();}, 12000);
+          setTimeout(function(){document.getElementById("intestazione").innerHTML = "legami";}, 12000);
+          setTimeout(function(){$("#intestazione").fadeOut();}, 14000);
+          setTimeout(function(){$("#intestazione").fadeIn();}, 15000);
+          setTimeout(function(){document.getElementById("intestazione").innerHTML = "e' il web";}, 15000);
       </script>
+  </div>
 
-      <!--END SLIDER-->
-    <div class="description">
-      <p>Impara a programmare partendo dalle basi delle singole tencnologie,Impara tramite spiegazione
-        degli algoritmi piu' comuni</p>
-        <p>Impara i legami fra i linguaggi programmazione che ad oggi sono le fondamenta di ogni sito web</p>
+  <ul>
+    <li>
+      <a href='node.html'>Node js</a>
+    </li>
+    <li>
+      <a href='htmlcss.html'>HTML5 & CSS3</a>
+    </li>
+    <li>
+      <a href='javascript.html'>Javascript Client</a>
+    </li>
+    <li>
+      <a href='php.html'>PHP</a>
+    </li>
+    <li>
+      <a href='tmplengine.html'>Templating Engine</a>
+    </li>
+    <li>
+      <a href='databases.html'>Databases</a>
+    </li>
+  </ul>
+</nav>
+
+<div id="buttonResponsive">
+
+  <button type="button" id="btnResp" onclick="responsivness()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </button>
+  <script>
+    function responsivness() {
+      var menu = document.getElementById("menu");
+      if (menu.className === "menu") {
+          menu.className += " responsive";
+      } else {
+          menu.className = "menu";
+      }
+    };
+  </script>
+</div>
+
+<div id="mainin">
+
+   <h3>Impara a programmare attraverso le <span style="color: red;">relazioni</span>..</h3>
+   <hr>
+   <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="../images/tagline1.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
     </div>
 
+    <div class="mySlides fade">
+      <img src="../images/tagline2.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
     </div>
 
-    <table id="puntiForza">
-      <tr>
-        <td>
-          <img src="../images/chmIq.png" alt="yao">
-          <p>Impara dalle basi</p>
-        </td>
-        <td>
-          <img src="../images/chmIq.png" alt="yao">
-          <p>Panoramica a 360 sul mondo del Web</p>
-        </td>
-        <td>
-          <img src="../images/chmIq.png" alt="yao">
-          <p>Articoli precisi e lineari</p>
-        </td>
-      </tr>
-    </table>
-    <footer>
-      <p>e' 2018 Aramu&Terzi</p>
-    </footer>
+    <div class="mySlides fade">
+      <img src="../images/tagline3.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
 
-  </body>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+  showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.opacity = 1;
+  dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+  <!--END SLIDER-->
+<div class="description">
+  <p>Impara a programmare partendo dalle basi delle singole tencnologie,Impara tramite spiegazione
+    degli algoritmi piu' comuni</p>
+    <p>Impara i legami fra i linguaggi programmazione che ad oggi sono le fondamenta di ogni sito web</p>
+</div>
+
+</div>
+<div class="tabella">
+  <table id="puntiForza">
+    <tr>
+      <td>
+        <img src="../images/chmIq.png" alt="yao">
+        <p>Impara dalle basi</p>
+      </td>
+      <td>
+        <img src="../images/chmIq.png" alt="yao">
+        <p>Panoramica a 360 sul mondo del Web</p>
+      </td>
+      <td>
+        <img src="../images/chmIq.png" alt="yao">
+        <p>Articoli precisi e lineari</p>
+      </td>
+    </tr>
+  </table>
+</div>
+<footer>
+  <p>e' 2018 Aramu&Terzi</p>
+</footer>
+
+</body>
 </html>

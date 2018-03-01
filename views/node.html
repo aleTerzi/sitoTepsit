@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <link rel='stylesheet' href="../stylesheets/style.css">
 		<link rel='stylesheet' href="../stylesheets/databases.css">
+		<link rel='stylesheet' href="../stylesheets/node.css">
   </head>
 </head>
 <body>
@@ -28,7 +29,8 @@
 
 			<ul>
 				<li>
-					<a href='node.html'>Node js</a>
+
+					<a href="node.html" id="current">Node js</a>
 				</li>
 				<li>
 					<a href='htmlcss.html'>HTML5 & CSS3</a>
@@ -43,32 +45,37 @@
 					<a href='tmplengine.html'>Templating Engine</a>
 				</li>
 				<li>
-					<a href='databases.html' id="current">Databases</a>
+					<a href='databases.html'>Databases</a>
 				</li>
 			</ul>
+
     </nav>
 
 		<div id="buttonResponsive">
 
-      <button type="button" id="btnResp" onclick="responsivness()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </button>
-      <script>
-        function responsivness() {
-          var menu = document.getElementById("menu");
-          if (menu.className === "menu") {
-              menu.className += " responsive";
-          } else {
-              menu.className = "menu";
-          }
-        };
-      </script>
-    </div>
+			<button type="button" id="btnResp" onclick="responsivness()">
+				<div></div>
+				<div></div>
+				<div></div>
+			</button>
+			<script>
+				function responsivness() {
+					var menu = document.getElementById("menu");
+			    if (menu.className === "menu") {
+			        menu.className += " responsive";
+			    } else {
+			        menu.className = "menu";
+			    }
+				};
+			</script>
+		</div>
 
 		<div id="mainNin">
+			<div class="pTitle">
+				<h2><span>Node</span>Js</h2>
+			</div>
 
+			<hr>
 		<pre>
 			<code>
 
