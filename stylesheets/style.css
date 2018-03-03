@@ -14,8 +14,6 @@ body {
   width: 300px;
 }
 
-
-
 h1 {
   float: left;
   margin-top:10px;
@@ -120,7 +118,18 @@ footer {
   background-color: white;
   margin: 6px 8px;
 }
+#buttonResponsive h1 {
+	margin:0;
+}
 
+#mainNin .indici {
+	font-weight: lighter;
+	font-size:20px;
+}
+
+
+
+/*MOBILE*/
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     #menu, #menu.responsive #titolo{
