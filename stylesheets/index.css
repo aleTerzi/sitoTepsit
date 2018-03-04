@@ -6,7 +6,7 @@
 }
 #mainin {
 
-	width: 1100px;
+	width: 90%;
 	margin:auto;
 	margin-top:100px;
 }
@@ -89,7 +89,7 @@
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dots .dot {
   cursor:pointer;
   height: 15px;
   width: 15px;
@@ -101,7 +101,7 @@
 
 }
 
-.active, .dot:hover {
+.active, .dots .dot:hover {
   background-color: #717171;
 }
 
@@ -145,6 +145,10 @@
 	width: 70%;
 	margin: auto;
 
+}
+
+#puntiForza td p {
+	margin-top:0px;
 }
 
 @media only screen and (max-width: 768px) {

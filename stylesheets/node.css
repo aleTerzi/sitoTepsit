@@ -1,3 +1,14 @@
 .pTitle span {
   color:green;
 }
+
+#mainNin p span {
+  color: green;
+}
+
+.listA {
+  float:left;
+  padding-right: 10px;
+  height: 2200px;
+  margin-top: 40px
+}

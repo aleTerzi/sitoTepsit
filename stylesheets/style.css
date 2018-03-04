@@ -86,13 +86,6 @@ nav ul li a:hover {
   font-size: 27px;
 }
 
-footer {
-  position:fixed;
-  clear: left;
-  bottom:8px;
-  left:20px;
-}
-
 .myslides {
   width: 100%;
 }
@@ -104,7 +97,7 @@ footer {
   top: 0;
   width: 100%;
   z-index: 100;
-  height: 40px;
+  height: 45px;
 }
 #buttonResponsive button {
   float: right;
@@ -123,11 +116,126 @@ footer {
 }
 
 #mainNin .indici {
+  margin-top: 20px;
 	font-weight: lighter;
-	font-size:20px;
+	font-size:40px;
+  color:#242729:
 }
 
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
+
+pre {
+  padding: 0px 20px;
+  margin: 50px 0;
+  border: 1px solid #ddd;
+  border-bottom-width: 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-font-smoothing: inherit;
+  overflow: auto;
+  background-color: #303544;
+  color: #fff;
+}
+
+code {
+  font-family: 'Inconsolata', monospace;
+  font-size: 17px;
+  color: #666;
+  margin: 0;
+  border-radius: 3px;
+  background-clip: padding-box;
+  color: #fff;
+}
+
+#mainNin {
+  max-width: 1400px;
+  width: 80%;
+  margin: auto;
+  margin-top:100px;
+}
+
+/*LO STYLE DEL CODICE A SCHERMO*/
+
+.viola {
+  color: #d30ac8;
+}
+
+.azzurro {
+  color: #50acce;
+}
+
+.verde {
+  color: #8bce50;
+}
+
+.blu {
+  color: #449de5;
+}
+
+#mainNin p {
+  font-size:20px;
+  font-family: calibri;
+}
+
+.listA {
+  float:left;
+  padding-right: 10px;
+  margin-top: 40px
+}
+.listA h2 {
+  margin-left: 30px;
+}
+.listA ul {
+  background-color: #f4f2f2;
+  padding-right: 10px;
+  border-radius: 0px;
+  border:1px solid #e1e4e8;
+  margin-right: 25px;
+  height: 250px;
+  padding-left: 20px;
+}
+.listA ul li {
+  list-style: none;
+    margin-top: 15px;
+}
+.listA ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  color: #666;
+}
+.listA ul li a:hover {
+  color:#0a215b;
+}
+
+.mainArt img{
+  width: 38%;
+}
+
+footer {
+  position:fixed;
+  clear: left;
+  bottom:8px;
+  right: 20px;
+  left:20px;
+}
+footer p {
+  float: left;
+}
+footer #tornaSu {
+  text-align: center;
+  border-radius: 3px;
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  text-decoration: none;
+  background-color: #242729;
+  width: 38px;
+}
 
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
@@ -145,7 +253,7 @@ footer {
     #menu.responsive ul {
       margin-top: 40px;
     }
-    
+
     #menu.responsive #titolo  {
       text-align: center;
       margin-top: 50px;
@@ -157,5 +265,19 @@ footer {
       text-align: center;
       margin: auto;
     }
-    #buttonResponsive{display:block;}
+
+    #buttonResponsive {
+      display:block;
+    }
+
+    .slideshow-container, .dots {
+      display: none;
+    }
+    .listA {
+      display: none;
+    }
+
+    .mainArt img{
+      width: 100%;
+    }
 }

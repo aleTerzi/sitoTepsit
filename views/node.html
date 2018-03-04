@@ -71,24 +71,126 @@
 		</div>
 
 		<div id="mainNin">
-			<div class="pTitle">
-				<h2><span>Node</span>Js</h2>
+			<div class="listA">
+				<h2>Fast Scroll</h2>
+				<ul>
+
+					<li>
+						<a href="#Introduzione">- Introduzione</a>
+					</li>
+					<li>
+						<a href="#struttura">- Struttura asincrona</a>
+					</li>
+					<li>
+						<a href="#relazioni">- Relazioni</a>
+					</li>
+					<li>
+						<a href="#installazione">- Installazione</a>
+					</li>
+					<li>
+						<a href="#primApp">- Creiamo un'app</a>
+					</li>
+					<li>
+						<a href="#primProg">- Primo programma</a>
+					</li>
+				</ul>
 			</div>
-			<hr>
-			
-			<h2 class="indici">Introduzione</h2>
-		<pre>
-			<code>
+			<div class="mainArt">
 
-	<span class="var">var</span> http = require('http');
 
-	http.createServer(function(req, res) {
-	  console.log("server started on port 8000");
-	}).listen(8000);
+				<div class="pTitle" id="pTitle">
+					<h2><span>Node</span>Js</h2>
+				</div>
+				<hr>
 
-			</code>
-		</pre>
+				<h2 class="indici" id="Introduzione">Introduzione</h2>
+					<p>
+						<span><b>Nodejs</b></span> e’ in sintesi il linguaggio javascript portato nel lato server.
+						E’ un linguaggio giovane che ha avuto un grandissimo seguito soprattutto
+					  grazie alle numerosissime librerie in grado di facilitare qualsiasi compito,
+						inoltre e’ in grado di elaborare molte <b>piu’</b> informazioni in molto meno tempo
+						rispetto a PHP.
+					</p>
+				<h2 class="indici" id="struttura">Struttura asincrona</h2>
+				<p>
+					E’ la principale sostanziale differenza con PHP, e’ grazie a questo metodo di
+					eseguire le informazioni che node eccelle nella velocita’ di calcolo.
+					Node non esegue ogni istruzione singolarmente, aspettando il completamento di
+					una per poi passare alla successiva, Node le esegue senza aspettare risparmiando
+					cosi’ moltissimo tempo
+				</p>
+				<h2  class="indici" id="relazioni">Relazioni</h2>
+				<p>
+					Node js e’ un linguaggio molto moderno anche per quanto riguarda le relazioni,
+					infatti node puo’ usufruire ad oggi di una vastissima varieta’ di librerie e moduli
+					per facilitare la programmazione alcune gia’ presenti al momento dell’istallazione
+					 di node ed altre invece da scaricare, ad esempio esiste la libreria Passport per la
+					 validazione di form , e’ presente una libreria per fare l’hash
+					delle password, sono presenti le librerie per dialogare meglio con i database ecc.
+					nodejs puo’ lavorare con <b>HTML</b> puro oppure puo’ fare uso di <b>Templating engines</b>,
+					i piu’ famosi sono jade handlebars e ejs.
 
+					node js avra’ bisogno di un file json con indicate le librerie e le informazioni
+					della nostra applicazione.
+			</p>
+			<h2 class="indici" id="installazione">Installazione</h2>
+			<p>
+
+				node e’ installabile facilmente dal sito ufficiale <a href="https://nodejs.org/it/"  target="_blank">https://nodejs.org/it/</a>.
+				Per verificare l’installazione bastera’ aprire cmd e digitare node -v, dovreste
+				ottenere un numero che indica la versione.
+			</p>
+			<img src="../articoli/nodejs/immagini/nodeVersion.png" alt="node version test" title="node -v">
+				<h2  class="indici" id="primApp">Prima applicazione in node</h2>
+			<p>
+				prima di tutto dovremmo creare una nostra applicazione e per fare questo
+				e’ necessario navigare su cmd nella cartella in cui vogliamo creare il nostro
+				progetto e digitare npm init.
+				Con questo comando dovremmo dare le informazioni base per la creazione dei
+				vari moduli e dell’importantissimo file json senza il quale la nostra applicazione
+				non puo’ funzionare.
+
+				Nel campo nome scrivete il nome che piu’ vi piace per la vosta applicazione.
+				Per la versione lasciate quella di default premete semplicemente invio
+				per la descrizione mettete quello che vi piace di piu’ cosi per l’autore, mentre
+			  per gli altri campi potete lasciare quelli di default.
+				Una convenzione e’ che nel campo main cioe’ il file principale del nostro
+				progetto venga messo il nome “app” o “server” comunque non e’ obbligatoria come procedura.
+
+				Perfetto il primo progetto e’ stato creato, non contiene ancora nulla ma e’
+				presente tutto cio’ che serve per inziare a programmare
+			</p>
+			<p><b>- npm init</b></p>
+				<img src="../articoli/nodejs/immagini/npmInit.png" alt="npm init" title="npm init">
+			<p><b>- init completato</b></p>
+				<img src="../articoli/nodejs/immagini/npmInit2.png" alt="npm init2" title="npm init2">
+			<h2 class="indici" id="primProg">Primo programma</h2>
+			<p>
+				ora create un file e chiamatelo con lo stesso nome che avete indicato nel campo
+				main al momento del init aggiungendo l’estensione .js . Es app.js
+				dopo aver scritto questo codice che vedete di seguito per eseguire  il server bastera' andare su
+				cmd sempre nella cartella in cui e’ presente il file principale e digitare
+				node nomefile ,senza aggiungere l’estensione .js
+				navigando ora sul vostro browser all’<b>URL localhost:8000 </b>e tornando su cmd
+				vedrete la scritta che abbiamo indicato noi all’interno del programma.
+				Avete creato il vostro primo server in Node
+			</p>
+			<pre>
+				<code>
+
+<span class="viola">var</span> http <span class="azzurro">= require</span>(<span class="verde">'http'</span>);
+
+http.<span class="blu">createServer</span>(<span class="viola">function</span>(req, res) {
+  console.log(<span class="verde">"server started on port 8000"</span>);
+}).<span class="blu">listen</span>(8000);
+
+				</code>
+			</pre>
+			</div>
 		</div>
+		<footer>
+		  <p>2018 Aramu&Terzi</p>
+			<a href="#pTitle" id="tornaSu">^</a>
+		</footer>
 </body>
 </html>
