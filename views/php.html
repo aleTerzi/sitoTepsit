@@ -5,7 +5,7 @@
 	<head>
     <meta charset="utf-8">
     <link rel='stylesheet' href="../stylesheets/style.css">
-		<link rel='stylesheet' href="../stylesheets/databases.css">
+		<link rel='stylesheet' href="../stylesheets/php.css">
   </head>
 </head>
 <body>
@@ -66,22 +66,138 @@
 		    };
 		  </script>
 		</div>
-
 		<div id="mainNin">
+		<div class="listA">
+			<h2>Fast Scroll</h2>
+			<ul>
 
+				<li>
+					<a href="#Introduzione">- Introduzione</a>
+				</li>
+				<li>
+					<a href="#struttura">- Struttura asincrona</a>
+				</li>
+				<li>
+					<a href="#relazioni">- Relazioni</a>
+				</li>
+				<li>
+					<a href="#installazione">- Installazione</a>
+				</li>
+				<li>
+					<a href="#primApp">- Primo programma</a>
+				</li>
+				<li>
+					<a href="#primProg">- PHP Post</a>
+				</li>
+			</ul>
+		</div>
+		<div class="mainArt">
+
+
+			<div class="pTitle" id="pTitle">
+				<h2>PHP</h2>
+				<img src="../articoli/php/immagini/logo.svg.png" title="php logo" id="logo">
+			</div>
+			<hr>
+
+			<h2 class="indici" id="Introduzione">Introduzione</h2>
+				<p>
+					Php(Php Hypertext Processor) e’ un linguaggio di programmazione
+					che si occupa principalmente dello sviluppo lato server,
+					Php infatti serve per elaborare dati compiere calcoli ecc, e vive dentro ad un server.
+					Php nasce nel 1994 da Rasmus Lerdorf
+				</p>
+			<h2 class="indici" id="struttura">Struttura sincrona</h2>
+			<p>
+				A differenza di node, Php ha qualche hanno ormai,
+				ma nonostante questo Php e’ ancora uno dei linguaggi <b>piu’ usati</b>  nel web,
+				ed il piu’ utilizzato  fra i linguaggi lato server. Php nonstante non sia
+				cosi’ veloce come node, e’ un linguaggio molto solido e rodato capace di elaborare
+				una grande quantita’ di informazioni a differenza di node
+				Php esegue le istruzioni una per volta, rendendo il processo di elaborazione
+				piuttosto lungo
+			</p>
+			<h2  class="indici" id="relazioni">Relazioni</h2>
+			<p>
+				PHP essendo soprattutto usato per lo sviluppo lato server si relazione o comunque
+				viene usato insieme ad <b>HTML</b> e <b>CSS</b>, oltre ai linguaggi SQL per interpretare i databases
+		</p>
+		<h2 class="indici" id="installazione">Xampp</h2>
+		<p>
+			Php necessita di lavorare su un server per questo molti in fase di sviluppo
+			usano xampp, una piattaforma che permette di usufruire di un server e di varie
+			altre tecnologie, tra cui Phpmyadmin che permette di usare i database.
+			Ecco un video molto completo che mostra  passo per passo come installare Xampp
+		</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/f25c92-wj4c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<p>
+			questa qua sotto e' l'immagine del pannello di controllo di xampp che ci servira
+			successivamente per fare partire il nostro server locale
+		</p>
+		<img src="../articoli/php/immagini/xamppCp.png" alt="node version test" title="node -v">
+			<h2  class="indici" id="primApp">Primo programma</h2>
+		<p>
+			dopo aver correttamente configurato xampp, potremo creare il nostro primo fil
+			e con estensione php
+			questo codice e’ un esempio di primo programma dove daremo in output la frase
+			 “Hello world!”
+		</p>
 		<pre>
 			<code>
-
-	<span class="var">var</span> http = require('http');
-
-	http.createServer(function(req, res) {
-	  console.log("server started on port 8000");
-	}).listen(8000);
-
+<span class="rosso">&lt?php&gt</span>
+	<span class="blu">echo</span> <span class="verde">"Hello World!"</span>;
+<span class="rosso">?></span>
+			</code>
+		</pre>
+		<p>
+			tutti i nostri programmi in php andranno inseriti fra questa sintassi
+			<b><?php programma ?></b>
+			dopo aver salvato il file nella cartella <b>htdocs</b>,
+			ed aver fatto partire il server Apache, dal pannello di controllo di xampp,
+			digitate nell’url di un qualsiasi browser <b>localhost/nomefile.php</b>, dovreste
+			vedere scritto a schermo proprio Hello world!
+		</p>
+		<h2 class="indici" id="primProg">PHP Post</h2>
+		<p>
+			dopo aver creato il nostro primo programma possiamo veramente fare
+			moltissime cose con Php, e qui di seguito vi mostrero’ una procedura
+			per ricevere informazioni tramite HTML per poi elaborarle.
+			Il codice qui sotto riceve dal un form HTML il nome di una persona, e
+			quello stesso nome verra dato in output grazie a PHP
+		</p>
+			<p><b>file PHP (esempio.php)</b></p>
+		<pre>
+			<code>
+<span class="rosso">&lt?php&gt</span>
+  <span class="rosso">$nome</span> = <span class="rosso">$_POST</span>[<span class="verde">'name'</span>];
+  <span class="blu">echo</span> <span class="rosso">$nome</span>;
+<span class="rosso">?></span>
 			</code>
 		</pre>
 
+		<p><b>file HTML</b></p>
+		<pre>
+			<code>
+&lt<span class="rosso">form</span> <span class="giallo">action</span>="esempio.php" <span class="giallo">method</span>="post">
+&lt<span class="rosso">label</span> <span class="giallo">for</span>="name">Nome&lt/<span class="rosso">label</span>>
+&lt<span class="rosso">input</span> <span class="giallo">type</span>="text" <span class="giallo">name</span>="name">
+&lt<span class="rosso">br</span>>
+&lt<span class="rosso">input</span> <span class="giallo">type</span>="submit" <span class="giallo">value</span>="invia">
+&lt/<span class="rosso">form</span>>
+			</code>
+		</pre>
+		<p>
+			per fare cio' e' importante che nell'attributo <b>'action'</b> del form inseriate il nome
+			del vostro file php collegato, nel mio caso e' appunto esempio.php
+		</p>
+	<h2 class="indici" id="primProg">Conclusione</h2>
+		<p>
+			Per questo articolo di PHP e' tutto, spero vi abbia fatto imparare qualcosa di piu'
+			su questo linguaggio di programmazione che nonostante gli anni, si continua a rivelare
+			solido e molto affidabile
+		</p>
 		</div>
+	</div>
 		<footer>
 		  <p>2018 Aramu&Terzi</p>
 			<a href="#pTitle" id="tornaSu">^</a>
