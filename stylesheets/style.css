@@ -163,6 +163,11 @@ code {
 
 .mainArt {
   margin-left: 220px;
+  padding-bottom: 44px;
+}
+
+.mainArt img{
+  width: 38%;
 }
 
 .pTitle h2{
@@ -202,6 +207,10 @@ code {
   color: #f9c022;
 }
 
+.grigio {
+  color: #333538;
+}
+
 /* FINE COLORI*/
 .listA {
   float:left;
@@ -232,10 +241,6 @@ code {
 }
 .listA ul li a:hover {
   color:#0a215b;
-}
-
-.mainArt img{
-  width: 38%;
 }
 
 footer {

@@ -5,7 +5,7 @@
 	<head>
     <meta charset="utf-8">
     <link rel='stylesheet' href="../stylesheets/style.css">
-		<link rel='stylesheet' href="../stylesheets/databases.css">
+		<link rel='stylesheet' href="../stylesheets/tmpl.css">
   </head>
 </head>
 <body>
@@ -67,20 +67,103 @@
       </script>
     </div>
 		<div id="mainNin">
+			<!--FAST SCROLL-->
+		<div class="listA">
+			<h2>Fast Scroll</h2>
+			<ul>
 
+				<li>
+					<a href="#Introduzione">- Introduzione</a>
+				</li>
+				<li>
+					<a href="#relazioni">- Relazioni</a>
+				</li>
+				<li>
+					<a href="#installazione">- Installazione HBS</a>
+				</li>
+				<li>
+					<a href="#primApp">-Settare HBS</a>
+				</li>
+				<li>
+					<a href="#esempi">- Esempi concreti</a>
+				</li>
+				<li>
+					<a href="#conclusione">- Conclusione</a>
+				</li>
+			</ul>
+		</div>
+		<!-- END FAST SCROLL-->
+		<div class="mainArt">
+		<div class="pTitle" id="pTitle">
+			<h2>Templating Engines</h2>
+		</div>
+		<hr>
+		<h2 class="indici" id="Introduzione">Introduzione</h2>
+		<p>
+			i template engines sono dei “linguaggi” che permettono di <b>elaborare</b> e
+			<b>visualizzare</b>
+			dati, utilizzando anche variabili, e condizioni, che poi andranno a costruire
+			il Front-End del nostro sito.
+			Ultimamente molti di questi template engines sono nati dopo la creazione di Node
+			js, che permette facilmente di configurare il template da usare.
+			I template ad oggi piu’ utilizzati son <a href="http://jade-lang.com/"><b>Jade</b></a>,
+			 <a href="https://handlebarsjs.com/"><b>Handlebars</b></a>  e <a href="http://www.embeddedjs.com/"><b>EJS</b></a>.
+		</p>
+		<h2  class="indici" id="relazioni">Relazioni</h2>
+		<p>
+			come gia’ scritto in precedenza molti Template
+			sono fatti per lavorare insieme a Node js, anche se piu’
+			generalmente possiamo dire che i Template engine, proprio come ad HTML,
+			supportano la programmazione lato server.
+		</p>
+		<h2 class="indici" id="installazione">Installazione Handlebars</h2>
+		<p>
+			Handlebars o HBS e’ sicuramente ad oggi uno dei template piu’ popolari per
+			lo sviluppo di applicazioni web. In questa guida vi faremo vedere l’uso di HBS insieme
+			a Node js.
+
+			Per installarlo, aprite cmd e recatevi nella cartella del vostro progetto node,
+			e digitate
+			<b>npm install express-handlebars --save</b>
+		</p>
+			<img src="../articoli/template/immagini/hbsInstall.png" alt="hbs installazione">
+
+			<h2  class="indici" id="primApp">Settare il template</h2>
+		<p>
+			come prima cosa dovrete includere handlebars nel vostro file principale del progetto
+		</p>
 		<pre>
 			<code>
-
-	<span class="var">var</span> http = require('http');
-
-	http.createServer(function(req, res) {
-	  console.log("server started on port 8000");
-	}).listen(8000);
-
+<span class="viola">var</span> hbs = require(<span class="verde">'express-handlebars'</span>);
 			</code>
 		</pre>
-
+		<p>
+			poi dovrete settare sempre all’interno dello stesso file, il <b>“motore grafico”</b>
+			del progetto, questo di seguito e’ il codice che dovrete incorporare
+		</p>
+		<pre>
+			<code>
+app.<span class="blu">engine</span>(<span class="verde">'hbs'</span>, hbs({extname: <span class="verde">'hbs'</span>, defaultLayout: <span class="verde">'layout'</span>, layoutsDir:__dirname + <span class="verde">'/views/layouts/'</span>}));
+app.<span class="blu">set</span>(<span class="verde">'views'</span>, path.join(__dirname, <span class="verde">'views'</span>));
+app.<span class="blu">set</span>(<span class="verde">'view engine'</span>, <span class="verde">'hbs'</span>);
+			</code>
+		</pre>
+		<h2 class="indici" id="esempi">Esempi concreti</h2>
+		<p>
+			se volete degli approfondimenti sui template engines e in particolare
+			di handlebars il video qui sotto vi puo’ essere estremamente utile per raggiungere
+			un buon livello con questa tecnologia
+		</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/1srD3Mdvf50" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	<h2 class="indici" id="conclusione">Conclusione</h2>
+		<p>
+			grazie per aver letto questa guida, speriamo tu abbia potuto apprendere qualcosa di nuovo.
+		</p>
+		<p>
+			<span style="color:red;"><b>Bew</b></span><b>link</b>
+		</p>
 		</div>
+	</div>
 		<footer>
 		  <p>2018 Aramu&Terzi</p>
 			<a href="#pTitle" id="tornaSu">^</a>
