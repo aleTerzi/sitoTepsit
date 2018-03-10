@@ -50,6 +50,10 @@ nav {
   z-index: 100;
 }
 
+nav a:last-child {
+	margin-right:0px;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -163,7 +167,7 @@ code {
 
 .mainArt {
   margin-left: 220px;
-  padding-bottom: 44px;
+  padding-bottom: 0px;
 }
 
 .mainArt img{
@@ -244,11 +248,10 @@ code {
 }
 
 footer {
-  position:fixed;
   clear: left;
   bottom:8px;
   right: 20px;
-  left:20px;
+  margin-left:20px;
 }
 footer p {
   float: left;
@@ -262,6 +265,14 @@ footer #tornaSu {
   text-decoration: none;
   background-color: #242729;
   width: 38px;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+}
+footer #tornaSu:hover {
+	background-color: #db0404;
 }
 
 /*MOBILE*/
@@ -274,7 +285,6 @@ footer #tornaSu {
     #menu.responsive {
       position: fixed;
       display: block;
-
     }
 
     #menu.responsive ul {
@@ -303,7 +313,11 @@ footer #tornaSu {
     .listA {
       display: none;
     }
-
+	
+	#mainNin {
+	  margin-top:70px;
+	}
+	
     .mainArt img{
       width: 100%;
     }
