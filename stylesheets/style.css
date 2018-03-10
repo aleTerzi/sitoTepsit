@@ -222,9 +222,11 @@ code {
   top: 35px;
   position: fixed;
 }
+
 .listA h2 {
   margin-left: 30px;
 }
+
 .listA ul {
   background-color: #f4f2f2;
   padding-right: 10px;
@@ -234,15 +236,18 @@ code {
   height: 250px;
   padding-left: 20px;
 }
+
 .listA ul li {
   list-style: none;
     margin-top: 15px;
 }
+
 .listA ul li a{
   font-size: 18px;
   text-decoration: none;
   color: #666;
 }
+
 .listA ul li a:hover {
   color:#0a215b;
 }
@@ -251,11 +256,29 @@ footer {
   clear: left;
   bottom:8px;
   right: 20px;
-  margin-left:20px;
+  height: 50px;
+  background-color: #e8e8e8;
+  margin-top: 60px;
 }
 footer p {
   float: left;
+  color: #666;
+  margin-left: 20px;
 }
+
+#tw {
+  margin-right: 70px;
+  width: 40px;
+  margin-top: 5px;
+}
+
+footer a img {
+  margin-top: 10px;
+  width: 30px;
+  float: right;
+  margin-right: 20px;
+}
+
 footer #tornaSu {
   text-align: center;
   border-radius: 3px;
@@ -313,11 +336,11 @@ footer #tornaSu:hover {
     .listA {
       display: none;
     }
-	
-	#mainNin {
-	  margin-top:70px;
-	}
-	
+
+  	#mainNin {
+  	  margin-top:70px;
+  	}
+
     .mainArt img{
       width: 100%;
     }
@@ -329,7 +352,12 @@ footer #tornaSu:hover {
     .mainArt {
       margin-left: 0px;
     }
+
     .mainArt iframe{
       width: 100%;
+    }
+
+    footer{
+      height: 100px;
     }
 }

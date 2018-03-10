@@ -142,9 +142,9 @@
 
 #puntiForza img {
 	overflow-wrap: break-word;
-	width: 70%;
+	width: 60%;
 	margin: auto;
-
+	margin-top: 50px;
 }
 
 #puntiForza td p {
