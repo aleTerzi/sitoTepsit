@@ -4,8 +4,10 @@
 <meta charset="utf-8">
 <link rel='stylesheet' href="../stylesheets/style.css">
 <link rel='stylesheet' href="../stylesheets/index.css">
+<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<title>Programming Websites</title>
+<title>BewLink | Home Page</title>
 </head>
 <body>
 
@@ -78,22 +80,19 @@
 <div id="mainin">
 
    <h3>Impara a programmare attraverso le <span style="color: red;">relazioni</span>..</h3>
-   <hr>
+
    <div class="slideshow-container">
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-      <img src="../images/tagline1.jpg" style="width:100%">
-      <div class="text">Caption Text</div>
+      <img src="../images/nodeIndexD.PNG" style="width:100%">
     </div>
 
     <div class="mySlides fade">
-      <img src="../images/tagline2.jpg" style="width:100%">
-      <div class="text">Caption Two</div>
+      <img src="../images/algoIndexD.PNG" style="width:100%">
     </div>
 
     <div class="mySlides fade">
-      <img src="../images/tagline3.jpg" style="width:100%">
-      <div class="text">Caption Three</div>
+      <img src="../images/coppiaIndexD.PNG" style="width:100%">
     </div>
 
 
@@ -111,33 +110,33 @@
   </div>
   <script>
   var slideIndex = 1;
-  showSlides(slideIndex);
+    showSlides(slideIndex);
 
   // Next/previous controls
   function plusSlides(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
   }
 
   // Thumbnail image controls
   function currentSlide(n) {
-  showSlides(slideIndex = n);
+    showSlides(slideIndex = n);
   }
 
   function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  slides[slideIndex-1].style.opacity = 1;
-  dots[slideIndex-1].className += " active";
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-1].style.opacity = 1;
+    dots[slideIndex-1].className += " active";
   }
   </script>
 
