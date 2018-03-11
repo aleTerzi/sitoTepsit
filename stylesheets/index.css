@@ -28,6 +28,8 @@
 	font-size: 20px;
 	margin:0px;
 	padding: 0px;
+	font-family: calibri;
+	font-weight: lighter;
 }
 
 /*slideshow-container */
@@ -43,9 +45,8 @@
 
 /* Hide the images by default */
 .mySlides {
-    display: none;
-		opacity: 0;
-
+  display: none;
+	opacity: 0;
 }
 
 /* Next & previous buttons */
@@ -155,9 +156,16 @@
 
 #puntiForza td p {
 	margin-top:0px;
-	font-size: 20px;
 	font-weight: lighter;
+	font-size: 19px;
 }
+
+#puntiForza hr {
+	background-color: #db0404;
+	border: 1px solid #db0404;
+	width: 52%;
+}
+
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
