@@ -145,6 +145,7 @@
 
 #puntiForza td {
 	text-align: center;
+
 }
 
 #puntiForza img {
@@ -154,17 +155,25 @@
 	margin-top: 50px;
 }
 
-#puntiForza td p {
+#puntiForza td {
 	margin-top:0px;
 	font-weight: lighter;
 	font-size: 19px;
 }
 
-#puntiForza hr {
+#puntiForza hr{
 	background-color: #db0404;
 	border: 1px solid #db0404;
 	width: 52%;
+	transition: all .4s ease;
+	-webkit-transition: all .4s ease;
 }
+
+#puntiForza td:hover  hr {
+	width: 65%;
+
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -174,4 +183,5 @@
 			width: 100%;
       vertical-align: middle;
     }
+
 }
