@@ -8,6 +8,16 @@
 		<link rel='stylesheet' href="../stylesheets/databases.css">
 		<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
+		<style media="screen">
+			.listA {
+				height: 2800px;
+				margin-top: 40px
+			}
+
+			.listA ul {
+				height: 280px;
+			}
+		</style>
   </head>
 </head>
 <body>
@@ -60,19 +70,89 @@
 		</div>
 
 		<div id="mainNin">
+			<div class="listA">
+				<h2>Fast Scroll</h2>
+				<ul>
 
-		<pre>
-			<code>
+					<li>
+						<a href="#Introduzione">- Introduzione</a>
+					</li>
+					<li>
+						<a href="#struttura">- creare un file</a>
+					</li>
+					<li>
+						<a href="#primProg">- Primo programma</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mainArt">
 
-	<span class="var">var</span> http = require('http');
 
-	http.createServer(function(req, res) {
-	  console.log("server started on port 8000");
-	}).listen(8000);
+				<div class="pTitle" id="pTitle">
+					<h2><span style="color:orange">Javascript</span></h2>
+				</div>
+				<hr>
 
-			</code>
-		</pre>
+				<h2 class="indici" id="Introduzione">Introduzione</h2>
+					<p>
+						<b>JavaScript</b> è un linguaggio di scripting orientato agli oggetti e
+						agli eventi, comunemente utilizzato nella programmazione web lato
+						client per la creazione, in siti web e applicazioni web, di effetti
+						dinamici interattivi tramite fuzioni di script invocate
+						da eventi innescati a loro volta in vari modi dall'utente sulla pagina
+						web in uso.
+						Queste funzione di script possono essere anche usate in HTML o in
+						file separati con estensione <b>.js</b>.
+						Nell’ultimo periodo l’uso di Javascript è stato esteso alle app ibride,
+						con le quali è possibile creare applicazioni per più sistemi
+						operativi utilizzando un unico codice sorgente basato appunto su
+						JavaScript, HTML e CSS.
+					</p>
+				<h2 class="indici" id="struttura">Come creare un file</h2>
+					<p>
+						Javascript si relaziona come gia’ detto con HTML per sviluppare
+						il <b>front end</b> dei siti web, tutta via puo’ anche essere integrato
+						con i diversi templating engines.
+						Prendendo come base Javascript inoltre si sono sviluppate
+						molte librerie e progetti a parte, uno dei piu’ famosi riguarda
+						<b>Jquery</b> che utilizzando funzioni e sintassi specifiche riesce a
+						semplificare enormemente il codice Javascript vanilla
+					</p>
 
+			<h2 class="indici" id="primProg">Primo programma</h2>
+				<p>
+					questo qui di seguito e’ un semplicissimo script che allerta tramite
+					il browser ogni qualvolta che viene cliccato il link
+				</p>
+			<pre>
+				<code>
+
+&lt;<span class="orange">html</span>&gt;
+  &lt;<span class="orange">head</span>&gt;
+  &lt;/<span class="orange">head</span>&gt;
+  &lt;/<span class="orange">body</span>&gt;
+    &lt;<span class="rosso">h1</span> onclick=<span class="verde">&quot;myfunction()&quot;</span>&gt;clicca&lt;/<span class="rosso">h1</span>&gt;
+    &lt;<span class="rosso">script</span> type=<span class="verde">&quot;text/javascript&quot;</span>&gt;
+      function myfunction() {
+        alert(<span class="verde">&quot;hello world&quot;</span>);
+      }
+    &lt;/<span class="rosso">script</span>&gt;
+  &lt;/<span class="orange">body</span>&gt;
+&lt;/<span class="orange">html</span>&gt;
+				</code>
+			</pre>
+			<p>
+				ecco il risulato del codice appena scritto
+			</p>
+			<img src="../images/js.png" alt="">
+		<h2 class="indici" id="primProg">Conclusione</h2>
+			<p>
+				grazie per aver letto questa guida, speriamo tu abbia potuto apprendere qualcosa di nuovo.
+			</p>
+			<p>
+				<span style="color:red;"><b>Bew</b></span><b>link</b>
+			</p>
+			</div>
 		</div>
 		<footer>
 		  <p>© 2018 Bewlink Tutti i diritti riservati</p>

@@ -305,7 +305,7 @@ footer #tornaSu:hover {
 }
 
 /*MOBILE*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1082px) {
     /* For mobile phones: */
     #menu, #menu.responsive #titolo{
       display: none;
