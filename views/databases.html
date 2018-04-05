@@ -8,6 +8,16 @@
 		<link rel='stylesheet' href="../stylesheets/databases.css">
 		<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
+		<style media="screen">
+			.listA {
+				height: 2800px;
+				margin-top: 40px
+			}
+
+			.listA ul {
+				height: 280px;
+			}
+		</style>
   </head>
 </head>
 <body>
@@ -60,19 +70,73 @@
     </div>
 
 		<div id="mainNin">
+			<div class="listA">
+				<h2>Fast Scroll</h2>
+				<ul>
 
-		<pre>
-			<code>
+					<li>
+						<a href="#Introduzione">- Introduzione</a>
+					</li>
+					<li>
+						<a href="#struttura">- Linguaggi </a>
+					</li>
+					<li>
+						<a href="#primProg">- MongoDB</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mainArt">
 
-	<span class="var">var</span> http = require('http');
 
-	http.createServer(function(req, res) {
-	  console.log("server started on port 8000");
-	}).listen(8000);
+				<div class="pTitle" id="pTitle">
+					<h2>Databases</h2>
+				</div>
+				<hr>
 
-			</code>
-		</pre>
+				<h2 class="indici" id="Introduzione">Introduzione</h2>
+					<p>
+						Il <b>database</b> (in italiano base di dati,abbreviato anche con la sigla
+						DB) in informatica indica un insieme di dati, omogeneo per
+						contenuti e per formato, memorizzati in un elaboratore elettronico
+						e interrogabili grazie al terminale utilizzando le chiavi di accesso
+						previste. Ad oggi i database vengono utilizzati ad esempio nella
+						<b>memorizzazione dei dati degli utenti</b> (email,password,username).
+					</p>
+				<h2 class="indici" id="struttura">Linguaggi di programmazione</h2>
+				<p>
+					ci sono diversi tipi di linguaggi di programmazione
+					che servono per utilizzare i database ad esempio:
+					SQL: <b>MySQL</b>
+					No SQL: <b>MongoDB</b>
+				</p>
+				<h2  class="indici" id="relazioni">MongoDB</h2>
+				<p>
+					è il più popolare <b>database NoSQL</b> e si
+					allontana dalla struttura tradizionale basata su tabelle
+					dei database relazionali in favore di documenti in
+					stile JSON con schema dinamico, rendendo
+					l'integrazione di dati di alcuni tipi di applicazioni più
+					facile e veloce.
+			</p>
 
+			<h2 class="indici" id="primProg">Download</h2>
+			<p>
+				per scaricare <a href="https://www.mongodb.com/it">MongoDB</a> basta andare sul sito ufficiale
+				e cliccare su download. Abbiamo installato MongoDB.
+				vi consigliamo di guardare il video presente qui sotto che riteniamo
+				essere estremamente valido ed efficace anche per la successiva
+				configurazione di mongo
+			</p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/1uFY60CESlM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+		<h2 class="indici" id="primProg">Conclusione</h2>
+			<p>
+				grazie per aver letto questa guida, speriamo tu abbia potuto apprendere qualcosa di nuovo.
+			</p>
+			<p>
+				<span style="color:red;"><b>Bew</b></span><b>link</b>
+			</p>
+			</div>
 		</div>
 		<footer>
 		  <p>© 2018 Bewlink Tutti i diritti riservati</p>

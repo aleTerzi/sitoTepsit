@@ -215,6 +215,10 @@ code {
   color: #333538;
 }
 
+.orange {
+  color: orange;
+}
+
 /* FINE COLORI*/
 .listA {
   float:left;
@@ -235,6 +239,7 @@ code {
   margin-right: 25px;
   height: 250px;
   padding-left: 20px;
+  width: 150px;
 }
 
 .listA ul li {
@@ -294,6 +299,7 @@ footer #tornaSu {
   transition: all .4s ease;
   -webkit-transition: all .4s ease;
 }
+
 footer #tornaSu:hover {
 	background-color: #db0404;
 }

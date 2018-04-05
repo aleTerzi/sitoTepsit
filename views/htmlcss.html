@@ -8,6 +8,16 @@
 		<link rel='stylesheet' href="../stylesheets/databases.css">
 		<link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
 		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
+		<style media="screen">
+			.listA {
+				height: 2800px;
+				margin-top: 40px
+			}
+
+			.listA ul {
+				height: 280px;
+			}
+		</style>
   </head>
 </head>
 <body>
@@ -59,19 +69,83 @@
 		</div>
 
 		<div id="mainNin">
+			<div class="listA">
+				<h2>Fast Scroll</h2>
+				<ul>
 
-		<pre>
-			<code>
+					<li>
+						<a href="#Introduzione">- Introduzione</a>
+					</li>
+					<li>
+						<a href="#struttura">- creare un file</a>
+					</li>
+					<li>
+						<a href="#primProg">- Primo programma</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mainArt">
 
-	<span class="var">var</span> http = require('http');
 
-	http.createServer(function(req, res) {
-	  console.log("server started on port 8000");
-	}).listen(8000);
+				<div class="pTitle" id="pTitle">
+					<h2><span style="color:orange">HTML </span>e <span style="color:#3592fc">CSS</span></h2>
+				</div>
+				<hr>
 
-			</code>
-		</pre>
+				<h2 class="indici" id="Introduzione">Introduzione</h2>
+					<p>
+						In informatica <b>l'HyperText Markup Language</b> (traduzione letterale:
+						linguaggio a marcatori per ipertesti) è un linguaggio di markup. Nato
+						per la formattazzione e impaginazione di documenti ipertestuali,
+						oggi è utilizzato principalmente per il disaccoppiamento della
+						struttura logica di una pagina web e la sua rappresentazione,
+						gestita tramite gli stili CSS(acronimo di Cascading Style Sheets, in
+						italiano fogli di stile a cascata).
+						Il CSS, in informatica, è un linguaggio usato per <b>definire
+						la formattazione</b> di documenti HTML ad esempio i siti web e
+						relative pagine web.
+						L'introduzione del CSS è divenuta necessaria per programmare in
+						modo più chiaro e facile da capire.
+					</p>
+				<h2 class="indici" id="struttura">Come creare un file</h2>
+				<p>
+					Per iniziare basta pochissimo:<br>
+					<b>-Un browser a vostra scelta.</b><br>
+					<b>-Un editor di testi</b><br> anche di questi ce ne sono molti un esempio e' <a href="https://atom.io/">atom</a>
+					Lanciamo il nostro editor di testi e scriviamo un semplice testo
+					come: “Hello World”.
+					Dopo questo salviamo il file con estensione .html ad esempio
+					“helloworld.html“, una volta fatto questo, cliccando sul file si aprirà
+					automaticamente il browser predefinito di sistema che mostrerà una
+					schermata contraddistinta da quello che avrete scritto nel vostro
+					editor di testo
+				</p>
 
+			<h2 class="indici" id="primProg">Primo programma</h2>
+				<p>
+					Ecco un esempio pratico di programma
+				</p>
+			<pre>
+				<code>
+
+&lt;<span class="orange">html</span>&gt;
+  &lt;<span class="orange">head</span>&gt;
+
+  &lt;/<span class="orange">head</span>&gt;
+  &lt;<span class="orange">body</span>&gt;
+        &lt;<span class="rosso">h1</span>&gt;primo programma&lt;/<span class="rosso">h1</span>&gt;
+  &lt;/<span class="orange">body</span>&gt;
+&lt;/<span class="orange">html</span>&gt;
+				</code>
+			</pre>
+		<h2 class="indici" id="primProg">Conclusione</h2>
+			<p>
+				grazie per aver letto questa guida, speriamo tu abbia potuto apprendere qualcosa di nuovo.
+			</p>
+			<p>
+				<span style="color:red;"><b>Bew</b></span><b>link</b>
+			</p>
+			</div>
 		</div>
 		<footer>
 		  <p>© 2018 Bewlink Tutti i diritti riservati</p>
