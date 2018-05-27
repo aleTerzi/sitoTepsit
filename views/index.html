@@ -81,65 +81,20 @@
 
    <h3>Impara a programmare attraverso le <span style="color: red;">relazioni...</span></h3>
 
-   <div class="slideshow-container">
+   <div class="slide">
     <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <img src="../images/nodeIndexD.PNG" style="width:100%">
-    </div>
 
-    <div class="mySlides fade">
-      <img src="../images/algoIndexD.PNG" style="width:100%">
-    </div>
-
-    <div class="mySlides fade">
-      <img src="../images/coppiaIndexD.PNG" style="width:100%">
-    </div>
+      <img id="immagine" src="../images/nodeIndexD.PNG" style="width:100%">
 
 
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <script type="text/javascript">
+        document.getElementById("immagine").setAttribute("src", "../images/nodeIndexD.PNG");
+        setTimeout(function(){document.getElementById("immagine").setAttribute("src", "../images/algoIndexD.PNG");}, 3000);
+        setTimeout(function(){document.getElementById("immagine").setAttribute("src", "../images/coppiaIndexD.PNG");}, 6000);
+      </script>
+
+
   </div>
-  <br>
-
-  <!-- The dots/circles -->
-  <div class="dots" style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-  </div>
-  <script>
-  var slideIndex = 1;
-    showSlides(slideIndex);
-
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    slides[slideIndex-1].style.opacity = 1;
-    dots[slideIndex-1].className += " active";
-  }
-  </script>
-
   <!--END SLIDER-->
 <div class="description">
   <p>Impara a programmare partendo dalle basi delle singole tencnologie,Impara tramite spiegazione
